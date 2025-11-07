@@ -1,0 +1,17 @@
+import { Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
+@Component({
+  selector: 'app-header',
+  standalone: true,
+  imports: [RouterLink],
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css',
+})
+export class HeaderComponent {
+  // Data binding with signals
+  myVar = signal('My First Angular App'); // Best Way
+
+  // Data binding without signals
+  // myVar = 'My First Angular App'; // Traditional Way
+}
