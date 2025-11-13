@@ -22,6 +22,11 @@ header {
 
         ul {
             list-style: none;
+            display: flex;
+            flex-direction: row; /* 👈 This makes <li> stack vertically */
+            gap: 8px; /* Optional: adds space between items */
+            margin: 0;
+            padding: 0;
 
             li {
                 cursor: pointer;

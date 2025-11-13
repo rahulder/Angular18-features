@@ -14,4 +14,12 @@ export const routes: Routes = [
       return import('./todos/todos.component').then((m) => m.TodosComponent);
     },
   },
+  {
+    path: '**',
+    loadComponent: () => {
+      return import('./wild-card/wild-card.component').then(
+        (c) => c.WildCardComponent
+      );
+    },
+  },
 ];
